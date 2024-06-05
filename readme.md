@@ -45,7 +45,7 @@ Este repositório é para o trabalho final da disciplina de Programação de Dis
 - Acessar a placa de líderes para comparar pontuações com outros usuários.
 
 ##### Perfil do Usuário
-- Editar informações pessoais (nome, e-mail, etc.).
+- Editar informações pessoais (nome, e-mail, imagem, senha).
 - Visualizar o histórico de quizzes realizados e suas respectivas pontuações.
 
 #### 3. Entradas Necessárias
