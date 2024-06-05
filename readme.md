@@ -68,6 +68,11 @@ Este repositório é para o trabalho final da disciplina de Programação de Dis
   - Curiosidades sobre bandeiras após cada resposta.
   - Placa de líderes com as melhores pontuações.
 
+#### 5. Acessebilidade
+
+- Suporte as linguas (português. inglês, espanhol)
+- Opção de tema escuro e claro
+
 ### Requisitos Não Funcionais
 
 #### 1. Segurança
