@@ -69,7 +69,3 @@ Este repositório é para o trabalho final da disciplina de Programação de Dis
 - Servidor Web: Implementação em Node.js com Express.
 - Banco de Dados: Uso de PostgreSQL para armazenamento de dados no servidor.
 - Cache Local: Uso do Room Database no aplicativo para cache local de dados, minimizando requisições ao servidor e melhorando a performance offline.
-
-#### 4. Usabilidade
-- Interface Intuitiva: A interface do aplicativo deve ser intuitiva e fácil de usar, proporcionando uma boa experiência ao usuário.
-- Feedback Imediato: Fornecer feedback imediato ao usuário para ações como respostas de quiz, envio de dados, usando para isso áudio e imagens.
