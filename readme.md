@@ -5,6 +5,16 @@
 ### Descrição geral
 Este repositório é para o trabalho final da disciplina de Programação de Dispositivos Móveis. Aqui está o código do BandeiraX, um app de quiz de bandeiras feito em Kotlin. Esse app é uma versão melhorada de um trabalho anterior, onde o quiz era mais simples. No BandeiraX, você pode responder perguntas sobre bandeiras e aprender curiosidades sobre elas. O app tem novos recursos e está mais completo, como vou descrever a seguir.
 
+### Imagens do trabalho anterior
+
+##### Quiz
+
+<img src="./tela1.jpeg" width=200 height=350>
+
+##### Curiosidades
+
+<img src="./tela2.jpeg" width=200 height=350>
+
 ### Papéis
 
 - Administrador
