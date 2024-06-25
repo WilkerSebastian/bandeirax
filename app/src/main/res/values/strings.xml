@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">bandeirax</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="login">Login</string>
+    <string name="register">Não tem uma conta? Registre-se</string>
+</resources>
