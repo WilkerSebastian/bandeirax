@@ -5,4 +5,10 @@
     <string name="password">Senha</string>
     <string name="login">Login</string>
     <string name="register">Não tem uma conta? Registre-se</string>
+    <string name="btn_register">Registrar</string>
+    <string name="btn_back">Voltar</string>
+    <string name="play">jogar</string>
+    <string name="Leaderboards">Placar de Líderes</string>
+    <string name="Profile">Perfil</string>
+    <string name="Administration">Administração</string>
 </resources>
