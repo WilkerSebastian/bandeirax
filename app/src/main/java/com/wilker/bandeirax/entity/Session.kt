@@ -2,6 +2,8 @@ package com.wilker.bandeirax.entity
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
+import androidx.room.Index
+import androidx.room.PrimaryKey
 
 @Entity(
     tableName = "session",
@@ -10,9 +12,10 @@ import androidx.room.ForeignKey
         parentColumns = arrayOf("id"),
         childColumns = arrayOf("userId"),
         onDelete = ForeignKey.CASCADE
-    )]
+    )],
+    indices = [Index(value = ["userId"], unique = true)]
 )
 data class Session(
-    val id: Int,
-    val userID: String
+    @PrimaryKey val id: Int,
+    val userId: String
 )

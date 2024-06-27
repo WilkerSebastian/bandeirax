@@ -2,35 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="50dp"
+    android:gravity="center|top"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    tools:context=".view.MainMenuActivity">
 
     <Button
         android:id="@+id/btnPlay"
-        android:layout_width="match_parent"
+        android:layout_width="158dp"
         android:layout_height="wrap_content"
-        android:text="@string/play"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="@string/play" />
 
     <Button
         android:id="@+id/btnLeaderboards"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Leaderboards"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="@string/Leaderboards" />
 
     <Button
         android:id="@+id/btnProfile"
-        android:layout_width="match_parent"
+        android:layout_width="158dp"
         android:layout_height="wrap_content"
-        android:text="@string/Profile"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="@string/Profile" />
 
     <Button
         android:id="@+id/btnAdministration"
-        android:layout_width="match_parent"
+        android:layout_width="158dp"
         android:layout_height="wrap_content"
-        android:text="@string/Administration"/>
+        android:text="@string/Administration" />
 
 </LinearLayout>
