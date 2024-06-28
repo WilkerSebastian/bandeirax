@@ -1,6 +1,7 @@
 package com.wilker.bandeirax.dao
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
@@ -17,5 +18,8 @@ interface SessionDao {
 
     @Update
     suspend fun updateSession(session: Session)
+
+    @Query("delete from session")
+    suspend fun deleteAll()
 
 }

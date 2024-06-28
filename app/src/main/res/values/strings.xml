@@ -11,4 +11,7 @@
     <string name="Leaderboards">Placar de Líderes</string>
     <string name="Profile">Perfil</string>
     <string name="Administration">Administração</string>
+    <string name="btn_save">Salvar</string>
+    <string name="title_profile">Perfil</string>
+    <string name="logout">logout</string>
 </resources>

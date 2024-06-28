@@ -87,7 +87,6 @@ class QuizActivity : AppCompatActivity() {
                 startNewRound()
                 handler.post(runnable)
 
-
             }
 
         }

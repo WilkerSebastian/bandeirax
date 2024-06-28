@@ -13,11 +13,8 @@ import androidx.lifecycle.lifecycleScope
 import com.wilker.bandeirax.R
 import com.wilker.bandeirax.api.RetrofitInstance
 import com.wilker.bandeirax.api.data.findOne.FindOneResponse
-import com.wilker.bandeirax.api.data.login.LoginResponse
 import com.wilker.bandeirax.connection.AppDatabase
-import com.wilker.bandeirax.entity.Session
 import com.wilker.bandeirax.entity.User
-import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
@@ -35,11 +32,6 @@ class MainMenuActivity : AppCompatActivity() {
 
         database = AppDatabase.getDatabase(this)
 
-        val btnPlay = findViewById<Button>(R.id.btnPlay)
-        val btnLeaderboards = findViewById<Button>(R.id.btnLeaderboards)
-        val btnProfile = findViewById<Button>(R.id.btnProfile)
-        val btnAdministration = findViewById<Button>(R.id.btnAdministration)
-
         lifecycleScope.launch{
 
             val session = database.sessionDao().selectFirstSession()
@@ -54,9 +46,21 @@ class MainMenuActivity : AppCompatActivity() {
 
         }
 
+        val btnPlay = findViewById<Button>(R.id.btnPlay)
+        val btnLeaderboards = findViewById<Button>(R.id.btnLeaderboards)
+        val btnProfile = findViewById<Button>(R.id.btnProfile)
+        val btnAdministration = findViewById<Button>(R.id.btnAdministration)
+
         btnPlay.setOnClickListener {
 
             val intent = Intent(this, QuizActivity::class.java)
+            startActivity(intent)
+
+        }
+
+        btnProfile.setOnClickListener{
+
+            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
 
         }
