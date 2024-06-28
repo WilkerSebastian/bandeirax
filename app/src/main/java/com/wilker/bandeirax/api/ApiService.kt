@@ -2,6 +2,7 @@ package com.wilker.bandeirax.api
 
 import com.wilker.bandeirax.api.data.create.CreateRequest
 import com.wilker.bandeirax.api.data.create.CreateResponse
+import com.wilker.bandeirax.api.data.findOne.FindOneResponse
 import com.wilker.bandeirax.api.data.login.LoginResponse
 import retrofit2.Call
 import retrofit2.http.Body
@@ -19,5 +20,8 @@ interface ApiService {
     @GET("/user/verified/login/$API_KEY")
     fun getVerfiedLogin(@Query("email") email: String,
                         @Query("password") password: String): Call<LoginResponse>
+
+    @GET("/user/$API_KEY")
+    fun findOneUser(@Query("id") id: String): Call<FindOneResponse>
 
 }

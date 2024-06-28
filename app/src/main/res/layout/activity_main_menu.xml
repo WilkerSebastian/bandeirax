@@ -13,26 +13,37 @@
         android:layout_width="158dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/play" />
+        android:text="@string/play"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/btnLeaderboards"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/Leaderboards" />
+        android:text="@string/Leaderboards"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/btnProfile"
         android:layout_width="158dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/Profile" />
+        android:text="@string/Profile"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/btnAdministration"
         android:layout_width="158dp"
         android:layout_height="wrap_content"
-        android:text="@string/Administration" />
+        android:text="@string/Administration"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textAlert"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+    />
 
 </LinearLayout>

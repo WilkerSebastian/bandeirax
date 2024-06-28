@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
 
                     if (dataUser != null) {
 
-                        val user = User(dataUser.id, dataUser.name, dataUser.email, dataUser.points, dataUser.activity, dataUser.admin)
+                        val user = User(dataUser.id, dataUser.name, dataUser.email, dataUser.points, dataUser.active, dataUser.admin)
 
                         lifecycleScope.launch {
 
