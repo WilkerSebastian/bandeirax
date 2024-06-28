@@ -70,9 +70,26 @@ class QuizActivity : AppCompatActivity() {
         database = AppDatabase.getDatabase(this)
 
         lifecycleScope.launch {
-            currentUser = database.userDao().getUserByEmail(intent.getStringExtra("user_email")!!)!!
-            startNewRound()
-            handler.post(runnable)
+            val session = database.sessionDao().selectFirstSession()
+
+            if (session == null) {
+                finish()
+            } else {
+
+                val user = database.userDao().getUserById(session.userId)
+
+                if (user == null) {
+                    finish()
+                } else {
+                    currentUser = user
+                }
+
+                startNewRound()
+                handler.post(runnable)
+
+
+            }
+
         }
 
         flag1.setOnClickListener { checkAnswer(flag1.tag as String) }
